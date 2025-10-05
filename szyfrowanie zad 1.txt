@@ -1,0 +1,37 @@
+1. Wstęp
+
+Celem projektu było stworzenie programu w języku C#, który szyfruje i odszyfrowuje tekst za pomocą szyfru Polibiusza. Szyfr ten polega na zamianie liter na liczby według ich pozycji w specjalnej tablicy znaków. Zdecydowałem się na tablicę 7 kolumn na 5 wierszy (7x5), ponieważ polski alfabet z literami diakrytycznymi ma 35 znaków.
+
+2. Tablica znaków (szachownica)
+
+Utworzyłem tablicę o wymiarach 7x5, która zawiera 35 liter polskiego alfabetu. Litery są w niej ułożone w losowej kolejności, żeby szyfr był trudniejszy do złamania. Wszystkie litery są zapisane dużymi literami.
+
+3. Szyfrowanie i deszyfrowanie
+
+Szyfrowanie:
+Program zamienia każdą literę z tekstu na dwucyfrowy kod: pierwsza cyfra oznacza wiersz (1-5), druga kolumna (1-7). Spacje i znaki nieznane są pomijane lub zastępowane znakami „??”. Szyfrogram jest ciągły, bez spacji.
+
+Deszyfrowanie:
+Program dzieli zaszyfrowany tekst na pary cyfr i odczytuje znaki z tablicy. Wynik wyświetlany jest małymi literami.
+
+4. Interfejs użytkownika
+
+Stworzyłem prostą aplikację WPF z:
+
+Polem do wpisania tekstu do szyfrowania lub odszyfrowania.
+
+Dwoma przyciskami: „Szyfruj” i „Deszyfruj”.
+
+Polem, gdzie wyświetlany jest wynik.
+
+5. Problemy i rozwiązania
+
+Na początku wynik deszyfrowania był wyświetlany dużymi literami, co poprawiłem przez konwersję na małe litery.
+
+Usunąłem spacje z szyfrogramu, żeby tekst był ciągły i łatwiejszy do przetworzenia.
+
+Litery w tablicy umieściłem w losowej kolejności, żeby zwiększyć bezpieczeństwo.
+
+6. Podsumowanie
+
+Projekt pokazał, jak można wykorzystać tablicę dwuwymiarową do implementacji szyfru Polibiusza. Dzięki WPF program jest prosty w obsłudze. Projekt można dalej rozwijać o obsługę spacji, znaków specjalnych czy klucza szyfrowego.
